@@ -35,6 +35,46 @@ return plants.find((plant) => plant.id === id);
 // Règles : id obligatoire et unique · nomCommun obligatoire · groupe présent dans GROUPES
 // · nombrePlants nombre ENTIER positif ou nul · dateReleve réelle au format AAAA-MM-JJ.
 export function verifierPlant(saisie, plants) {
+ let erreurs = [];
+  let id = saisie.id;
+  let nomCommun = saisie.nomCommun;
+  let nombrePlants = versNombre(saisie.nombrePlants);
+  if (id === undefined || id === null || String(id).trim() === "") {
+    erreurs.push("Le code du plant est obligatoire.");
+  }
+
+  let codeExiste = false;
+  for (let i = 0; i < plants.length; i++) {
+    if (plants[i].id === id) {
+      codeExiste = true;
+    }
+  }
+
+  if (codeExiste === true) {
+    erreurs.push("Ce code est déjà utilisé.");
+  }
+  if (nomCommun === undefined || nomCommun === null || String(nomCommun).trim() === "") {
+    erreurs.push("Le nom commun est obligatoire.");
+  }
+  let groupeCorrect = false;
+
+  for (let i = 0; i < GROUPES.length; i++) {
+    if (GROUPES[i] === saisie.groupe) {
+      groupeCorrect = true;
+    }
+  }
+
+  if (groupeCorrect === false) {
+    erreurs.push("Le groupe botanique est incorrect.");
+  }
+  if (Number.isInteger(nombrePlants) === false || nombrePlants < 0) {
+    erreurs.push("Le nombre de plants doit être un entier positif ou nul.");
+  }
+  if (estDateValide(saisie.dateReleve) === false) {
+    erreurs.push("La date du relevé doit être valide au format AAAA-MM-JJ.");
+  }
+
+  return erreurs;
   throw new Error('TODO : coder verifierPlant dans src/registre.js');
 }
 
