@@ -8,6 +8,7 @@ export const GROUPES = ['angiosperme', 'gymnosperme'];
 // Renvoie une ligne de texte qui décrit le plant.
 // Exemple : 'N09 | pin | gymnosperme | 8 plants | 2026-10-24'
 export function formaterPlant(plant) {
+return `${plant.id} | ${plant.nomCommun} | ${plant.groupe} | ${plant.nombrePlants} plants | ${plant.dateReleve}`;
   throw new Error('TODO : coder formaterPlant dans src/registre.js');
 }
 
