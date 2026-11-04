@@ -15,6 +15,10 @@ return `${plant.id} | ${plant.nomCommun} | ${plant.groupe} | ${plant.nombrePlant
 // Renvoie un texte avec un plant par ligne (lignes séparées par '\n'),
 // ou 'Aucun plant enregistré.' si la liste est vide.
 export function listerPlants(plants) {
+    if (plants.length === 0) {
+    return 'Aucun plant enregistré.';
+  }
+  return plants.map(formaterPlant).join('\n');
   throw new Error('TODO : coder listerPlants dans src/registre.js');
 }
 
