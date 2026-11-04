@@ -18,5 +18,6 @@ return plants.filter((plant) => plant.groupe === groupe);
 // Renvoie une COPIE triée par nombre de plants croissant, avec un comparateur numérique.
 // Deux plants de même nombre gardent leur ordre d'origine. Le tableau reçu ne doit pas changer d'ordre.
 export function trierParNombrePlants(plants) {
+return [...plants].sort((a, b) => a.nombrePlants - b.nombrePlants);
   throw new Error('TODO : coder trierParNombrePlants dans src/recherche.js');
 }
