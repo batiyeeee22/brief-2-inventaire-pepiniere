@@ -24,6 +24,7 @@ export function listerPlants(plants) {
 
 // Renvoie le plant qui a ce code (identifiant), ou undefined s'il n'existe pas.
 export function trouverParId(plants, id) {
+return plants.find((plant) => plant.id === id);
   throw new Error('TODO : coder trouverParId dans src/registre.js');
 }
 
