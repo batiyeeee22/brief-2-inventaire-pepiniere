@@ -29,6 +29,7 @@ export function syntheseParGroupe(plants) {
 // Renvoie un NOUVEAU tableau avec les plants dont le nombre est INFÉRIEUR OU ÉGAL au seuil.
 // Exemple : stocksFaibles(donnees, 10) → N09 (8 plants) et N10 (10 plants)
 export function stocksFaibles(plants, seuil) {
+  return plants.filter((plant) => plant.nombrePlants <= seuil);
   throw new Error('TODO : coder stocksFaibles dans src/synthese.js');
 }
 
