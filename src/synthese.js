@@ -15,6 +15,14 @@ export function totalPlants(plants) {
 // Exemple : { angiosperme: { especes: 8, plants: 222 }, gymnosperme: { especes: 2, plants: 18 } }
 // Liste vide : {} (un objet vide).
 export function syntheseParGroupe(plants) {
+  return plants.reduce((synthese, plant) => {
+    if (!synthese[plant.groupe]) {
+      synthese[plant.groupe] = { especes: 0, plants: 0 };
+    }
+    synthese[plant.groupe].especes += 1;
+    synthese[plant.groupe].plants += plant.nombrePlants;
+    return synthese;
+  }, {});
   throw new Error('TODO : coder syntheseParGroupe dans src/synthese.js');
 }
 
