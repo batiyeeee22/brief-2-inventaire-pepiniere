@@ -4,6 +4,8 @@
 // Renvoie un NOUVEAU tableau avec les plants dont le nom commun CONTIENT le texte cherché,
 // sans tenir compte des majuscules : 'PALM' trouve 'palmier à huile'. Éventuellement vide.
 export function rechercherParNom(plants, texte) {
+  const recherche = texte.toLowerCase();
+  return plants.filter((plant) => plant.nomCommun.toLowerCase().includes(recherche));
   throw new Error('TODO : coder rechercherParNom dans src/recherche.js');
 }
 
