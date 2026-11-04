@@ -3,8 +3,7 @@
 > Projet individuel du SAS DFS, brief 2 (sujet : [SUJET.md](SUJET.md)). Remplacez chaque ✏️ par votre texte, puis supprimez cette ligne.
 
 ## Contexte
-
-✏️ *En cinq à huit phrases : qui utilise l'outil (son métier, son geste professionnel), son besoin, ce qu'il saisit, ce que le programme lui affiche, ce que l'outil ne fait pas.*
+L'outil est utilisé par un responsable de pépinière pédagogique (assistant de pépinière). Son geste professionnel consiste à observer les étiquettes et les organes des plantes, appliquer une classification botanique simple, puis compter les quantités disponibles. Son besoin est de structurer un inventaire dispersé pour retrouver facilement une espèce et voir les quantités. L'utilisateur saisit l'origine du relevé (étiquette, photo ou spécimen), l'espèce, le groupe botanique, ainsi que les quantités de plants. Le programme affiche un menu principal textuel permettant de lister, d'ajouter, de rechercher, de trier les plantes ou d'afficher une synthèse des quantités, tout en indiquant le nombre d'espèces chargées depuis les données. L'outil ne gère pas les identifications incertaines de manière automatisée et nécessite que les cas douteux soient signalés directement.
 
 ## Prérequis et lancement
 
@@ -46,4 +45,4 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-✏️ *Prénom NOM, compte GitHub. Entraide : avec qui, sur quoi.*
+✏️ *Astrid Malory Batiyé Koffi, batiyeeee22. Entraide : avec qui, sur quoi.*
