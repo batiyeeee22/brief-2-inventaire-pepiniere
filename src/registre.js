@@ -80,6 +80,13 @@ export function verifierPlant(saisie, plants) {
 
 // Fabrique le plant à enregistrer à partir d'une saisie VALIDE : nombrePlants devient un nombre.
 export function creerPlant(saisie) {
+    return {
+    id: saisie.id,
+    nomCommun: saisie.nomCommun,
+    groupe: saisie.groupe,
+    nombrePlants: versNombre(saisie.nombrePlants),
+    dateReleve: saisie.dateReleve,
+  };
   throw new Error('TODO : coder creerPlant dans src/registre.js');
 }
 
