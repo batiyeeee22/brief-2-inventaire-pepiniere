@@ -11,6 +11,7 @@ export function rechercherParNom(plants, texte) {
 
 // Renvoie un NOUVEAU tableau avec les plants de ce groupe botanique (éventuellement vide).
 export function filtrerParGroupe(plants, groupe) {
+return plants.filter((plant) => plant.groupe === groupe);
   throw new Error('TODO : coder filtrerParGroupe dans src/recherche.js');
 }
 
