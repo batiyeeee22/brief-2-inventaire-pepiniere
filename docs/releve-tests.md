@@ -10,12 +10,12 @@ plants gymnosperme : 10+8 = 18.
 
 | Action                    | Attendu                     | Obtenu                      | Testeur:  |
 | ------------------------- | --------------------------- | --------------------------- | -------                   |
-| Calcul du stock total     |                             |                                |                           |
-| Total espèces angiosperme |                             |                              |                           |
-| Total plants angiosperme  |                             |                                |                           |
-| Total espèces gymnosperme |                             |                              |                        |
-| Total plants gymnosperme  |                             |                              |                           |
-| Stock faible              |                             |                             |                           |
-| Espèce la plus abondante  |                             |                              |                           |
+| Calcul du stock total     |         240                  |        240                 |  DIBY konan Francois Ebenezer                  |
+| Total espèces angiosperme |        8                    |       8                       |      DIBY konan Francois Ebenezer                     |
+| Total plants angiosperme  |        222                     |      222                          |     DIBY konan Francois Ebenezer                      |
+| Total espèces gymnosperme |         2                    |            2                  |       DIBY konan Francois Ebenezer                 |
+| Total plants gymnosperme  |          18                   |          18                    |       DIBY konan Francois Ebenezer                    |
+| Stock faible              |           N09 et N10                  |      N09 ET N10                       |    DIBY konan Francois Ebenezer                       |
+| Espèce la plus abondante  |                  N04           |                N04              |             DIBY konan Francois Ebenezer              |
 
 **Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : ✏️
