@@ -13,3 +13,4 @@
 **Listes de valeurs autorisées** : `groupe` accepte uniquement `angiosperme` et `gymnosperme`. Les quantités sont des entiers positifs ou nuls ; la date doit exister au calendrier et respecter le format `AAAA-MM-JJ`.
 
 **Sources** : `SUJET.md` pour la signification des champs et les règles de validation ; `donnees/plants.json` pour les exemples réels du jeu de données. Le fichier contient 10 enregistrements fictifs, tous datés du `2026-10-24`. La classification des groupes est fournie et validée par le coach agronomie, à partir de la fiche botanique de référence.
+ 
